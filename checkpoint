@@ -1,0 +1,2 @@
+model_checkpoint_path: "weightsProva.h5"
+all_model_checkpoint_paths: "weightsProva.h5"

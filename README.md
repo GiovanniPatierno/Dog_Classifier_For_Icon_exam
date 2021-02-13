@@ -5,8 +5,11 @@ Repository per l'esame di ingegneria della conoscenza
 Regole principali per il corretto funzionamento del programma:
 
 
--installare il database al seguente indirizzo: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
+-scaricare il database al seguente indirizzo: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
 
--installare le Resnet50 per le bottlneck features: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz
+-scaricare le bottlneck features per Resnet50: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz
 
-il codice si trova tutto sul file main.py
+estrarre il databese e le features direttamente nella cartella del progetto in locale.
+
+
+il codice si trova tutto sul file main.py(codice eseguibile per costruzione e test del modello),def_functio.py(dove vengono istanziate le funzioni utilizzate nel main),e bottlneck_features.py(che serve per l'estrazione di quest' ultime).

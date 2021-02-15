@@ -29,6 +29,7 @@ train_Resnet50, valid_Resnet50, test_Resnet50 = def_function.get_bottleneck_feat
 
 #inizializzo il modello di Resnet50
 Resnet50_model = Sequential()
+#GlobalAveragePooling è una metodologia utilizzata per una migliore rappresentazione del vettore. Può essere 1D/2D/3D. Utilizza una finestra del parser che si sposta sull'oggetto e li mette in comune calcolando la media (GlobalAveragePooling) o scegliendo il valore massimo (GlobalMaxPooling). 
 Resnet50_model.add(GlobalAveragePooling2D(input_shape=(train_Resnet50.shape[1:])))
 Resnet50_model.add(Dense(133, activation='softmax'))
 Resnet50_model.summary()
